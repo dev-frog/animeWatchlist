@@ -6,7 +6,7 @@ function cn(...classes: string[]){
 }
 
 
-const Card = () => {
+const Card = ({image}: {image: Image}) => {
   const [isLoading, setLoading] = useState(true);
   return (
     <a href="#" className="group">
@@ -15,7 +15,7 @@ const Card = () => {
           layout="fill"
           objectFit="cover"
           alt=""
-          src="https://bit.ly/placeholder-img"
+          src={image.imageSrc}
           className={cn(
             'group-hover:opacity-75 duration-700 ease-in-out',
             isLoading 
@@ -25,8 +25,8 @@ const Card = () => {
           onLoadingComplete={() => setLoading(false)}
         />
       </div>
-      <h3 className="mt-4 text-sm text-gray-700"> Lee Robinson</h3>
-      <p className="mt-1 text-lg font-medium text-gray-900">@leeerob</p>
+      <h3 className="mt-4 text-sm text-gray-700">{image.name}</h3>
+      <p className="mt-1 text-lg font-medium text-gray-900">{image.rate}</p>
     </a>
   );
 };
