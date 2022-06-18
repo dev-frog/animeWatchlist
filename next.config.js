@@ -2,6 +2,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['bit.ly']
+    domains: ['bit.ly','m.media-amazon.com']
   }
 }
