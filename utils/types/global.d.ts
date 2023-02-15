@@ -1,12 +1,13 @@
 // global types
-export {}
+export {};
 
-declare global{
-    type Image = {
-        id: number
-        href: string
-        imageSrc: string
-        name: string
-        rate: number
-    }
+declare global {
+  type Image = {
+    url: string | StaticImport;
+    id: number;
+    href: string;
+    imgUrl: string;
+    name: string;
+    rate: number;
+  };
 }
