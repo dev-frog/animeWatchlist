@@ -8,31 +8,31 @@ const upload = () => {
   const [progresspercent, setProgresspercent] = useState(0);
 
   //   write upload function using typescript
-  const upload = async (e) => {
-    const file = e.target.files[0];
-    const storageRef = ref(storage, "images/" + file.name);
-    const uploadTask = uploadBytesResumable(storageRef, file);
+  // const upload = async (e: any) => {
+  //   const file = e.target.files[0];
+  //   const storageRef = ref(storage, "images/" + file.name);
+  //   const uploadTask = uploadBytesResumable(storageRef, file);
 
-    uploadTask.on(
-      "state_changed",
-      (snapshot) => {
-        const progress =
-          (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        setProgresspercent(progress);
-      },
-      (error) => {
-        console.log(error);
-      },
-      () => {
-        getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-          setImgUrl(downloadURL);
-        });
-      }
-    );
-  };
+  //   uploadTask.on(
+  //     "state_changed",
+  //     (snapshot) => {
+  //       const progress =
+  //         (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+  //       setProgresspercent(progress);
+  //     },
+  //     (error) => {
+  //       console.log(error);
+  //     },
+  //     () => {
+  //       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+  //         return setImgUrl(downloadURL);
+  //       });
+  //     }
+  //   );
+  // };
 
   //   submit form function to save data to firebase
-  const submitFrom = async (e) => {
+  const submitFrom = async (e: any) => {
     e.preventDefault();
 
     // get data from the form
