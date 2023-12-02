@@ -35,7 +35,7 @@ const products = [
   },
 
   {
-    id: 1,
+    id: 4,
     name: "Basic Tee",
     href: "#",
     imageSrc:
@@ -46,7 +46,7 @@ const products = [
   },
 
   {
-    id: 1,
+    id: 5,
     name: "Basic Tee",
     href: "#",
     imageSrc:
@@ -57,7 +57,7 @@ const products = [
   },
 
   {
-    id: 1,
+    id: 6,
     name: "Basic Tee",
     href: "#",
     imageSrc:
@@ -68,7 +68,7 @@ const products = [
   },
 
   {
-    id: 1,
+    id: 7,
     name: "Basic Tee",
     href: "#",
     imageSrc:
@@ -79,7 +79,7 @@ const products = [
   },
 
   {
-    id: 1,
+    id: 8,
     name: "Basic Tee",
     href: "#",
     imageSrc:
